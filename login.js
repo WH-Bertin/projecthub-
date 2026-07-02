@@ -1,4 +1,4 @@
-// This is the simple JS we bertin weeeeeeeeeeeeeeeeee
+
 const loginForm = document.querySelector('.login-form');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
