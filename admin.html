@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Project's Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+    <!-- Fixed top bar -->
+    <header class="admin-header">
+        <div class="admin-header-inner">
+            <div class="admin-brand">
+                <span class="brand-name">Project's Hub</span>
+                <span class="brand-divider"></span>
+                <span class="brand-page">Admin Panel</span>
+            </div>
+            <nav>
+                <a class="admin-logout" href="index.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    Logout
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+
+        <!-- Page heading -->
+        <section class="page-head">
+            <h1 class="page-title">System Dashboard</h1>
+            <p class="page-subtitle">Manage platform activity and approve new project submissions.</p>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="stat-grid">
+
+            <div class="stat-card">
+                <div class="stat-card-head">
+                    <span class="stat-label">Total Projects</span>
+                    <span class="material-symbols-outlined">folder_open</span>
+                </div>
+                <div class="stat-number">12</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-head">
+                    <span class="stat-label">Active Investors</span>
+                    <span class="material-symbols-outlined">groups</span>
+                </div>
+                <div class="stat-number">8</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 40%"></div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-head">
+                    <span class="stat-label">Pending Approvals</span>
+                    <span class="material-symbols-outlined">pending_actions</span>
+                </div>
+                <div class="stat-number-error">3</div>
+                <div class="stat-bar">
+                    <div class="stat-fill-error" style="width: 25%"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Projects Table -->
+        <section>
+            <div class="table-section-head">
+                <h2 class="table-section-title">Recent Projects</h2>
+                <span class="filter-badge">Filtered: All</span>
+            </div>
+
+            <div class="table-wrap">
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Student</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="cell-title">Quantum Ledger</div>
+                                <div class="cell-meta">FinTech · Submission: Today</div>
+                            </td>
+                            <td>Alex Rivera</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>
+                                <div class="action-links">
+                                    <a class="action-link" href="#">Approve</a>
+                                    <a class="action-link" href="#">View</a>
+                                    <a class="action-danger" href="#">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cell-title">EcoGrid AI</div>
+                                <div class="cell-meta">Sustainability · Submission: Yesterday</div>
+                            </td>
+                            <td>Sarah Chen</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>
+                                <div class="action-links">
+                                    <a class="action-link" href="#">View</a>
+                                    <a class="action-danger" href="#">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cell-title">BioSynth Hub</div>
+                                <div class="cell-meta">HealthTech · Submission: Oct 12</div>
+                            </td>
+                            <td>Marcus Thorne</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>
+                                <div class="action-links">
+                                    <a class="action-link" href="#">View</a>
+                                    <a class="action-danger" href="#">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="cell-title">Urban Flow</div>
+                                <div class="cell-meta">Logistics · Submission: Oct 10</div>
+                            </td>
+                            <td>Elena Rodriguez</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>
+                                <div class="action-links">
+                                    <a class="action-link" href="#">Approve</a>
+                                    <a class="action-link" href="#">View</a>
+                                    <a class="action-danger" href="#">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="load-more-wrap">
+                <button class="btn-load">Load More Projects</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="admin-footer">
+        <div class="admin-footer-inner">
+            <span class="brand-name">Project's Hub</span>
+            <p class="footer-copy">© 2026 Project's Hub. All rights reserved.</p>
+            <a class="admin-logout" href="index.html">
+                <span class="material-symbols-outlined">logout</span>
+                Logout
+            </a>
+        </div>
+    </footer>
+
+    <script src="admin.js" defer></script>
+</body>
+</html>
