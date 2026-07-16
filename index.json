@@ -1,0 +1,43 @@
+[ {  "cardTag":"AI &amp; Robotics",
+    "matSymbol":"trending_up",
+    "cardTitle":"neural-path Logistics",
+    "cardDesc":"Autonomous warehouse routing optimization using proprietary neural network architecture developed at MIT.",
+    "avatar"  :"AM",
+    "authorName":"Alex Mercer"
+
+} ,{ "cardTag":"CLEANTECH",
+    "matSymbol":"eco",
+    "cardTitle":"Hydra-Flow Systems",
+    "cardDesc":"Low-energy desalination technology utilizing kinetic wave energy to provide clean water to coastal communities.",
+    "avatar"  :"SK",
+    "authorName":"Sarah k."
+
+} ,{"cardTag":"FINTECH",
+    "matSymbol":"payments",
+    "cardTitle":"Vault-Chain Protocol",
+    "cardDesc":"Secure, decentralized lending platform specifically designed for micro-entrepreneurs in emerging markets.",
+    "avatar"  :"JK",
+    "authorName":"Jordan lee"
+
+} ,{"cardTag":"BIOTECH",
+    "matSymbol":"biotech",
+    "cardTitle":"syntho-skin Med",
+    "cardDesc":"Synthetic, biocompatible skin grafts for rapid healing of severe burns and chronic ulcers.",
+    "avatar"  :"EP",
+    "authorName":"Elena p."
+
+},{"cardTag":"EDTECH",
+    "matSymbol":"school",
+    "cardTitle":"Lumina Learning",
+    "cardDesc":"Adaptive AI tutoring system that mirrors the Socratic method for high school mathematics.",
+    "avatar"  :"DT",
+    "authorName":"David T."
+
+},{"cardTag":"SaaS",
+    "matSymbol":"cloud",
+    "cardTitle":"Metric-Flow Dash",
+    "cardDesc":"Unified analytics for hybrid-remote teams, focusing on output quality over time-tracking metrics.",
+    "avatar"  :"CW",
+    "authorName":"Chris Wong."
+
+}]

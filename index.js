@@ -34,3 +34,40 @@
       });
     });
   }
+
+  fetch('index.json')
+
+  .then(response => response.json())
+
+  .then(data => {
+    const Projects =document.querySelector('.card-grid');
+     
+    Projects.innerHTML = data.map(item => `
+        
+
+        <article class="card">
+                    <div>
+                        <div class="card-tag-row">
+                            <span class="card-tag">${item.cardTag}</span>
+                            <span class="material-symbols-outlined card-icon">${item.matSymbol}</span>
+                        </div>
+                        <h3 class="card-title">${item.cardTitle}</h3>
+                        <p class="card-desc">${item.cardDesc}</p>
+                        <div class="card-author">
+                            <div class="avatar">${item.avatar}</div>
+                            <span class="author-name">${item.authorName}</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-primary" href="#">VIEW DETAILS</a>
+                        <a class="btn btn-outline" href="login.html">CONTACT INVESTOR</a>
+                    </div>
+                </article>
+
+          
+    `).join('');
+
+  })
+  .catch(error =>{
+    console.error('error fetching data',error);
+  });

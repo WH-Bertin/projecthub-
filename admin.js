@@ -58,3 +58,57 @@ if (loadMoreButton) {
     showMessage('No more projects to load in this simple demo.');
   });
 }
+
+ fetch('admin.json') 
+
+ .then(response => response.json())
+
+ .then (data => {
+    const tBody = document.querySelector('tbody')
+     tBody.innerHTML= data.map(item => `
+      <tr>
+          <td>
+              <div class="cell-title">${item.cellTitle}</div>
+              <div class="cell-meta">${item.cellMate}· Submission: (${item.Date})</div>
+               </td>
+               <td>${item.name}</td>
+               <td><span class="status-badge status-${item.status}">${item.status}</span></td>
+                <td>
+                <div class="action-links">
+                <a class="action-link" href="#">Approve</a>
+                <a class="action-link" href="#">View</a>
+                <a class="action-danger" href="#">Delete</a>
+                </div>
+           </td>
+        </tr>
+      `).join('');
+       const rows = document.querySelectorAll(".projects-table tbody tr");
+
+for (let i = 0; i < rows.length; i++) {
+
+    // Get the status in the current row
+    const status = rows[i].querySelector(".status-badge");
+
+    // Get all links in the current row
+    const links = rows[i].querySelectorAll("a");
+
+    // Check every link
+    for (let j = 0; j < links.length; j++) {
+
+        if (
+            status.textContent.trim() === "active" &&
+            links[j].textContent.trim() === "Approve"
+        ) {
+            links[j].remove();
+        }
+
+    }
+}
+
+ })
+
+ .catch(error => {
+  console.error("there is error from json",error);
+ });
+
+
